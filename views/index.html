@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>URL API | Stefansen</title>
+    <title>Hello HTML</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
@@ -12,9 +12,32 @@
       <label>
         URL to be shortened
       </label>
-      <input name="URL" type="text" placeholder="Enter URL here">
+      <input name="URL" type="text" placeholder="Enter URL here" />
       <button type="submit">Submit</button>
     </form>
+    <ul>
+      <li>
+        I can POST a URL to [project_url]/api/shorturl/new and I will receive a
+        shortened URL in the JSON response. Example :
+        {"original_url":"www.google.com","short_url":1}
+      </li>
+      <br />
+      <li>
+        If I pass an invalid URL that doesn't follow the
+        http(s)://www.example.com(/more/routes) format, the JSON response will
+        contain an error like {"error":"invalid URL"} HINT: to be sure that the
+        submitted url points to a valid site you can use the function
+        dns.lookup(host, cb) from the dns core module.
+      </li>
+      <br />
+      <li>
+        When I visit the shortened URL, it will redirect me to my original link.
+      </li>
+      <br />
+      <li>
+        Example Usage: [this_project_url]/api/shorturl/3
+      </li>
+    </ul>
     <footer>
       <a href="https://bstefansen.github.io/Portfolio/" target="_blank">
         by Blake Stefansen

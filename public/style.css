@@ -24,3 +24,7 @@ form {
   width: 50%;
   margin: auto;
 }
+
+ul {
+  list-style-type: none;
+}
