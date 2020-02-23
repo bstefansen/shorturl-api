@@ -1,0 +1,26 @@
+body {
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+input[type=text], label {
+  margin-bottom: 8px;
+}
+
+a {
+  color: rgb(100, 150, 255);
+  display: block;
+  margin: 1em;
+}
+form {
+  border: solid 3px white;
+  padding: 1em;
+  width: 50%;
+  margin: auto;
+}
