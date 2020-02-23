@@ -1,11 +1,14 @@
 {
+  "homepage": "http://bstefansen.github.io/shorturl-api",
   "name": "shorturl-api_v2",
   "version": "1.0.0",
   "description": "Boilerplate for React and Express",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Blake Stefansen",
   "license": "MIT",
@@ -20,6 +23,7 @@
     "mongoose": "^5.9.2"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "nodemon": "^2.0.2"
   }
 }
